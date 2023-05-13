@@ -42,19 +42,6 @@ export class App extends Component {
       page !== prevState.page ||
       searchInputValue !== prevState.searchInputValue
     ) {
-      // axiosGetImg(searchInputValue)
-      //   // .then(response => console.log(response.data))
-      //   // .then(response => {
-      //   //   return Promise.reject(new Error(error.message));
-      //   // })
-      //   .then(response => {
-      //     this.setState({ photos: response.data });
-      //   })
-      //   .catch(error => {
-      //     this.setState({ error: error.message });
-      //   });
-      // // .catch(error => console.log(error));
-
       this.setState({ loading: true });
 
       axiosGetImg(searchInputValue, page)
@@ -84,10 +71,6 @@ export class App extends Component {
       tags: tags,
     }));
   };
-
-  // handleFormSubmit = searchInputValue => {
-  //   this.setState({ searchInputValue });
-  // };
 
   handleFormSubmit = searchInputValue => {
     this.setState({ searchInputValue, photos: [], page: 1 });
