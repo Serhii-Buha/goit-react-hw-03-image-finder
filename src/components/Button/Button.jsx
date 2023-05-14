@@ -1,6 +1,10 @@
 import PropTypes from 'prop-types';
 import { ButtonLoader } from 'components/Button/Button.styled';
 
+// export const Button = () => {
+//   return <ButtonLoader type="button">Load more</ButtonLoader>;
+// };
+
 export const Button = ({ onLoadMore, loadMore }) => {
   return loadMore ? (
     <ButtonLoader type="button" onClick={onLoadMore}>

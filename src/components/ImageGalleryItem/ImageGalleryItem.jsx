@@ -8,6 +8,7 @@ export const ImageGalleryItem = ({
   onClick,
 }) => {
   return (
+    // <Li onClick={() => onClick()}>
     <Li onClick={() => onClick({ largeImageURL, tags })}>
       <Img src={webformatURL} alt={tags} />
     </Li>

@@ -18,6 +18,29 @@ export const ImageGallery = ({ photos, onClick }) => {
   );
 };
 
+// photos массив обьектов
+// export const ImageGallery = ({ photos, onClick }) => {
+//   return (
+//     <List>
+//       {photos.hits.map(({ id, webformatURL, largeImageURL, tags }) => (
+//         <ImageGalleryItem
+//           key={id}
+//           onClick={onClick}
+//           webformatURL={webformatURL}
+//           largeImageURL={largeImageURL}
+//           tags={tags}
+//         />
+//       ))}
+
+//       {/* {photos.hits.map(({id, webformatURL, largeImageURL }) => (
+//           <ImageGalleryItem key={id} webformatURL={webformatURL} largeImageURL={largeImageURL} onClick={()=> } />
+//       ))} */}
+//       {/* <ImageGalleryItem onClick={onClick} /> */}
+//       {/* <!-- Набор <li> с изображениями --> */}
+//     </List>
+//   );
+// };
+
 ImageGallery.propTypes = {
   photos: PropTypes.arrayOf(
     PropTypes.shape({
